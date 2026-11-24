@@ -106,6 +106,17 @@ footer{background:#100d0b;color:#b9ab98;padding:56px 24px 40px;text-align:center
 footer img{height:64px;margin-bottom:20px}
 footer .fl{display:flex;justify-content:center;gap:26px;margin:0 0 18px;font-weight:700;color:#e9dfd1}
 footer .fl a:hover{color:var(--gold2)}
+.cog{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.cog img{width:100%;border-radius:22px;box-shadow:0 18px 44px rgba(40,25,15,.18)}
+.cog h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(30px,3.6vw,44px);margin:12px 0 16px;line-height:1.12}
+.cog p{color:var(--muted);font-size:17px;line-height:1.7;margin:0 0 18px}
+.vols{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.vols span{background:#fff;border:1px solid #e6d9c6;border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:700}
+.cog ul{list-style:none;padding:0;margin:0 0 28px}
+.cog li{padding:7px 0;font-size:15.5px}.cog li:before{content:"✦";color:var(--gold);margin-right:10px}
+.cog .cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn-outline{border:1.5px solid var(--ink);color:var(--ink)}.btn-outline:hover{background:var(--ink);color:#fff}
+@media(max-width:900px){.cog{grid-template-columns:1fr;gap:28px}}
 @media(max-width:900px){
  nav .links a:not(.btn){display:none}
  .hero{min-height:600px}.hero:after{background:linear-gradient(180deg,rgba(14,11,9,.55) 0%,rgba(14,11,9,.9) 70%)}.hero .wrap{padding-top:120px;padding-bottom:50px}.hero .logo{height:80px}
@@ -122,7 +133,7 @@ footer .fl a:hover{color:var(--gold2)}
 
 <nav><div class="wrap">
  <a href="#"><img src="img/logo_gold.png" alt="BrainVault Publications"></a>
- <div class="links"><a href="#about">About</a><a href="#collections">Collections</a><a href="#christmas">Christmas</a><a href="#amazon">Books</a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
+ <div class="links"><a href="#about">About</a><a href="#collections">Collections</a><a href="#christmas">Christmas</a><a href="#cognitive">Seniors</a><a href="#amazon">Books</a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
 </div></nav>
 
 <header class="hero"><div class="bg"></div><div class="wrap">
@@ -159,7 +170,7 @@ footer .fl a:hover{color:var(--gold2)}
  <div class="coll">
   <a class="card" href="#christmas"><div class="img" style="background-image:url(pins/bundle_a.jpg);background-position:center 62%"><span class="badge">Kids · ages 3–10</span></div><div class="t"><h3>Christmas Games for Kids</h3><p>Picture bingo, a left-right gift exchange, a scavenger hunt and an 80-activity pack for class parties and Christmas break.</p><span class="more">See the games →</span></div></a>
   <a class="card" href="https://www.etsy.com/listing/4624330439"><div class="img" style="background-image:url(img/books.jpg)"><span class="badge">Family</span></div><div class="t"><h3>Christmas Activity Books</h3><p>Five printable books for cozy evenings: Christmas trivia, large-print word searches, coloring, wordplay and parlor games.</p><span class="more">View on Etsy →</span></div></a>
-  <a class="card" href="https://www.etsy.com/shop/BrainVaultBooks"><div class="img" style="background-image:url(img/seniors.jpg)"><span class="badge">Seniors</span></div><div class="t"><h3>For Seniors &amp; Care Partners</h3><p>Large-print activity books and conversation cards made for calm, shared time with older adults and their families.</p><span class="more">Browse the shop →</span></div></a>
+  <a class="card" href="#cognitive"><div class="img" style="background-image:url(img/seniors.jpg)"><span class="badge">Seniors</span></div><div class="t"><h3>For Seniors &amp; Care Partners</h3><p>Large-print activity books and conversation cards made for calm, shared time with older adults and their families.</p><span class="more">See the series →</span></div></a>
  </div>
 </div></section>
 
@@ -177,6 +188,18 @@ footer .fl a:hover{color:var(--gold2)}
    <ul><li>50 picture bingo cards + calling cards</li><li>Left-right gift exchange stories</li><li>Picture &amp; riddle scavenger hunt</li><li>80-activity kids pack</li></ul>
    <a class="btn btn-gold" href="https://www.etsy.com/listing/4624838355">Get the bundle on Etsy</a></div>
   <div class="img" style="background-image:url(pins/bingo_b.jpg);background-position:center 55%"></div>
+ </div>
+</div></section>
+
+<section id="cognitive"><div class="wrap cog">
+ <img src="img/cognitive.jpg" alt="Everyday Moments Together, In the Kitchen, with two inside pages">
+ <div>
+  <div class="eyebrow">Everyday Moments Together</div>
+  <h2>Gentle Cognitive Activities for Seniors &amp; Their Care Partners</h2>
+  <p>A large-print series for seniors living with dementia and the people who care for them. Each page offers one calm activity with a familiar picture, so you can look, talk and share a moment together.</p>
+  <div class="vols"><span>Vol. 1 · In the Kitchen</span><span>Vol. 2 · In the Garden</span><span>Vol. 3 · Out and About</span><span>Vol. 4 · Music We Love</span><span>Vol. 5 · Making Things</span></div>
+  <ul><li>One activity per page, in large print</li><li>Familiar everyday pictures to look at and talk about</li><li>A companion page with simple tips for sharing the book</li></ul>
+  <div class="cta"><a class="btn btn-gold btn-lg" href="https://www.etsy.com/listing/4624315361">See the 5-book set</a><a class="btn btn-outline" href="https://www.etsy.com/listing/4624298390">Start with Vol. 1</a></div>
  </div>
 </div></section>
 
