@@ -1,4 +1,198 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BrainVault Publications</title>
-<style>body{font-family:system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 18px;line-height:1.6;color:#2b2320;text-align:center}h1{color:#b01e2c}a{color:#166e46}</style></head><body>
-<h1>BrainVault Publications</h1><p>Printable games, puzzles and activity books for kids, families and seniors.</p>
-<p><a href="https://www.etsy.com/shop/BrainVaultBooks">Visit our Etsy shop</a> · <a href="privacy.html">Privacy Policy</a></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrainVault Publications – Printable games &amp; activity books</title>
+<meta name="description" content="BrainVault Publications creates printable games, activity pages and large-print puzzle books for kids, families and seniors. Instant PDF downloads.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#191613;--ink2:#2a241f;--ivory:#fbf7f0;--sand:#f3ebdf;--gold:#c9a25a;--gold2:#e6c886;--red:#a3212c;--green:#1f6b4a;--muted:#6f6359}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:auto;padding:0 24px}
+.serif{font-family:Fraunces,Georgia,serif}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--gold)}
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(25,22,19,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,90,.25)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+nav img{height:52px}
+nav .links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:700;color:#e9dfd1}
+nav .links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;padding:15px 28px;border-radius:999px;transition:all .2s}
+.btn-gold{background:linear-gradient(180deg,#e2c27e,#c29548);color:#1b1610;box-shadow:0 8px 24px rgba(201,162,90,.28)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,162,90,.4)}
+.btn-line{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#000}
+nav .btn{padding:10px 20px;font-size:13px}
+/* hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;color:#fff;overflow:hidden;background:#120f0c}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 35%/cover no-repeat;transform:scale(1.04)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,11,9,.92) 0%,rgba(14,11,9,.72) 42%,rgba(14,11,9,.15) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero .logo{height:110px;margin-bottom:26px}
+.hero h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(40px,5.6vw,70px);line-height:1.04;margin:0 0 20px;max-width:640px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{font-size:19px;line-height:1.6;max-width:540px;color:#efe6da;margin:0 0 32px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+/* strip */
+.strip{background:var(--ink);color:#e9dfd1}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding-top:22px;padding-bottom:22px}
+.strip div{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700}
+.strip i{flex:none;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-style:normal;font-size:15px}
+/* sections */
+section{padding:96px 0}
+.head{text-align:center;max-width:720px;margin:0 auto 52px}
+.head h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(32px,4vw,48px);margin:12px 0 14px;letter-spacing:-.01em}
+.head p{color:var(--muted);font-size:17px;line-height:1.65;margin:0}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(30px,3.6vw,44px);margin:12px 0 18px;line-height:1.12}
+.about p{color:var(--muted);font-size:17px;line-height:1.75;margin:0 0 16px}
+.about .pics{position:relative;height:460px}
+.about .pics img{position:absolute;width:56%;border-radius:16px;box-shadow:0 24px 50px rgba(40,25,15,.22)}
+.about .pics img:nth-child(1){left:0;top:40px;transform:rotate(-4deg)}
+.about .pics img:nth-child(2){right:0;top:0;transform:rotate(4deg)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.pillars div{border-top:2px solid var(--gold);padding-top:12px}
+.pillars b{display:block;font-family:Fraunces,serif;font-size:19px;margin-bottom:4px}
+.pillars span{font-size:14px;color:var(--muted);line-height:1.5}
+/* collections */
+.collections{background:var(--sand)}
+.coll{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(40,25,15,.10);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(40,25,15,.16)}
+.card .img{height:300px;background:#efe5d6 center/cover no-repeat;position:relative}
+.card .img .badge{position:absolute;left:16px;top:16px;background:rgba(25,22,19,.85);color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+.card .t{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
+.card h3{font-family:Fraunces,serif;font-weight:600;font-size:25px;margin:0 0 10px}
+.card p{color:var(--muted);font-size:15px;line-height:1.65;margin:0 0 18px;flex:1}
+.card .more{font-weight:800;font-size:14px;color:var(--red)}
+.card .img.type{background:radial-gradient(circle at 30% 20%,#3a2f26,#191512 70%);display:grid;place-items:center}
+.card .img.type div{font-family:Fraunces,serif;color:var(--gold2);font-size:62px;line-height:1;text-align:center}
+.card .img.type small{display:block;font-family:'Plus Jakarta Sans';font-size:12px;letter-spacing:.22em;color:#d9cbb6;margin-top:12px}
+/* games */
+.games{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.game{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(40,25,15,.09);transition:transform .25s}
+.game:hover{transform:translateY(-5px)}
+.game img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block}
+.game div{padding:16px 18px 20px}
+.game h4{font-family:Fraunces,serif;font-weight:600;font-size:19px;margin:0 0 6px}
+.game p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
+/* feature */
+.feature{background:var(--ink);color:#f3ebdf;border-radius:28px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.feature .t{padding:56px}
+.feature h3{font-family:Fraunces,serif;font-weight:600;font-size:clamp(30px,3.4vw,42px);margin:12px 0 16px;color:#fff}
+.feature ul{list-style:none;padding:0;margin:0 0 30px}
+.feature li{padding:10px 0;border-bottom:1px solid rgba(201,162,90,.2);font-size:16px}
+.feature li:before{content:"✦";color:var(--gold);margin-right:12px}
+.feature .img{background:url(img/books.jpg) center/cover}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.step{text-align:center;padding:10px 18px}
+.step .n{font-family:Fraunces,serif;font-size:56px;color:var(--gold);line-height:1}
+.step h4{font-family:Fraunces,serif;font-weight:600;font-size:22px;margin:10px 0 8px}
+.step p{color:var(--muted);line-height:1.6;margin:0;font-size:15px}
+/* cta + footer */
+.final{background:linear-gradient(rgba(14,11,9,.78),rgba(14,11,9,.85)),url(img/hero.jpg) center/cover;color:#fff;text-align:center;padding:100px 24px}
+.final h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(32px,4.4vw,52px);margin:0 0 14px}
+.final p{color:#e9dfd1;font-size:18px;margin:0 0 30px}
+footer{background:#100d0b;color:#b9ab98;padding:56px 24px 40px;text-align:center;font-size:14px}
+footer img{height:64px;margin-bottom:20px}
+footer .fl{display:flex;justify-content:center;gap:26px;margin:0 0 18px;font-weight:700;color:#e9dfd1}
+footer .fl a:hover{color:var(--gold2)}
+@media(max-width:900px){
+ nav .links a:not(.btn){display:none}
+ .hero{min-height:600px}.hero:after{background:linear-gradient(180deg,rgba(14,11,9,.55) 0%,rgba(14,11,9,.9) 70%)}.hero .wrap{padding-top:120px;padding-bottom:50px}.hero .logo{height:80px}
+ .strip .wrap{grid-template-columns:1fr 1fr}
+ section{padding:70px 0}
+ .about{grid-template-columns:1fr;gap:30px}.about .pics{height:380px}
+ .coll{grid-template-columns:1fr}.games{grid-template-columns:1fr 1fr}
+ .feature{grid-template-columns:1fr}.feature .img{min-height:240px;order:-1}.feature .t{padding:34px 26px}
+ .steps{grid-template-columns:1fr}.pillars{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+ <a href="#"><img src="img/logo_gold.png" alt="BrainVault Publications"></a>
+ <div class="links"><a href="#about">About</a><a href="#collections">Collections</a><a href="#christmas">Christmas</a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
+</div></nav>
+
+<header class="hero"><div class="bg"></div><div class="wrap">
+ <div class="eyebrow">Printable games &amp; activity books</div>
+ <h1 style="margin-top:14px">Printables that bring people <em>together</em>.</h1>
+ <p>Games, puzzles and activity books for kids, families and grandparents – designed with care, delivered instantly, ready to print at home or school.</p>
+ <div class="cta"><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Visit the shop</a><a class="btn btn-line" href="#collections">Explore collections</a></div>
+</div></header>
+
+<div class="strip"><div class="wrap">
+ <div><i>↓</i>Instant PDF download</div>
+ <div><i>⎙</i>US Letter &amp; A4 sizes</div>
+ <div><i>◎</i>Real pages shown in every listing</div>
+ <div><i>✦</i>Nothing is shipped</div>
+</div></div>
+
+<section id="about"><div class="wrap about">
+ <div>
+  <div class="eyebrow">About BrainVault</div>
+  <h2>An independent publisher of screen-free fun</h2>
+  <p>BrainVault Publications creates printable games and activity books for the moments that matter: a classroom Christmas party, a quiet afternoon with grandparents, a family evening around the table.</p>
+  <p>Every product is a complete, ready-to-print PDF – clear instructions, answer keys where needed, and pages laid out for easy printing on home printers.</p>
+  <div class="pillars">
+   <div><b>Thoughtful</b><span>Clear rules and a short guide with every game.</span></div>
+   <div><b>Printable</b><span>Letter and A4, many with ink-saving versions.</span></div>
+   <div><b>Instant</b><span>Download right after checkout on Etsy.</span></div>
+  </div>
+ </div>
+ <div class="pics"><img src="pins/bundle_b.jpg" alt="Christmas games bundle pages"><img src="pins/kids_a.jpg" alt="Kids Christmas activity pages"></div>
+</div></section>
+
+<section id="collections" class="collections"><div class="wrap">
+ <div class="head"><div class="eyebrow">Our collections</div><h2>Something for every age</h2><p>Three collections, one idea: time well spent together, on paper.</p></div>
+ <div class="coll">
+  <a class="card" href="#christmas"><div class="img" style="background-image:url(pins/bundle_a.jpg);background-position:center 62%"><span class="badge">Kids · ages 3–10</span></div><div class="t"><h3>Christmas Games for Kids</h3><p>Picture bingo, a left-right gift exchange, a scavenger hunt and an 80-activity pack for class parties and Christmas break.</p><span class="more">See the games →</span></div></a>
+  <a class="card" href="https://www.etsy.com/listing/4624330439"><div class="img" style="background-image:url(img/books.jpg)"><span class="badge">Family</span></div><div class="t"><h3>Christmas Activity Books</h3><p>Five printable books for cozy evenings: Christmas trivia, large-print word searches, coloring, wordplay and parlor games.</p><span class="more">View on Etsy →</span></div></a>
+  <a class="card" href="https://www.etsy.com/shop/BrainVaultBooks"><div class="img type"><div>Aa<small>LARGE PRINT · EASY TO READ</small></div></div><div class="t"><h3>For Seniors &amp; Care Partners</h3><p>Large-print activity books and conversation cards made for calm, shared time with older adults and their families.</p><span class="more">Browse the shop →</span></div></a>
+ </div>
+</div></section>
+
+<section id="christmas"><div class="wrap">
+ <div class="head"><div class="eyebrow">Christmas 2026</div><h2>Christmas games for kids</h2><p>Each game comes with a short guide, so any adult can run it in minutes.</p></div>
+ <div class="games">
+  <a class="game" href="https://www.etsy.com/listing/4624565317"><img src="pins/bingo50_a.jpg" alt="Christmas picture bingo"><div><h4>Christmas Picture Bingo</h4><p>30, 50 or 100 unique cards with big pictures and words, plus calling cards.</p></div></a>
+  <a class="game" href="https://www.etsy.com/listing/4624746772"><img src="pins/gift_b.jpg" alt="Left right gift exchange game"><div><h4>Where Will Your Gift Land?</h4><p>12 read-aloud stories – pass the gift on every LEFT and RIGHT.</p></div></a>
+  <a class="game" href="https://www.etsy.com/listing/4624778696"><img src="pins/hunt_a.jpg" alt="Christmas scavenger hunt"><div><h4>Christmas Scavenger Hunt</h4><p>Pictures for ages 3–6, riddles for 6–10, indoors or out.</p></div></a>
+  <a class="game" href="https://www.etsy.com/listing/4624773571"><img src="pins/kids_b.jpg" alt="Kids Christmas activity pack"><div><h4>Kids Activity Pack</h4><p>80 activities in two age levels, with answer keys.</p></div></a>
+ </div>
+ <div style="height:56px"></div>
+ <div class="feature">
+  <div class="t"><div class="eyebrow">Best value</div><h3>All 4 Christmas games in one download</h3>
+   <ul><li>50 picture bingo cards + calling cards</li><li>Left-right gift exchange stories</li><li>Picture &amp; riddle scavenger hunt</li><li>80-page kids activity pack</li></ul>
+   <a class="btn btn-gold" href="https://www.etsy.com/listing/4624838355">Get the bundle on Etsy</a></div>
+  <div class="img" style="background-image:url(pins/bingo_b.jpg);background-position:center 55%"></div>
+ </div>
+</div></section>
+
+<section style="background:var(--sand)"><div class="wrap">
+ <div class="head"><div class="eyebrow">How it works</div><h2>Ready to play in minutes</h2></div>
+ <div class="steps">
+  <div class="step"><div class="n">01</div><h4>Choose on Etsy</h4><p>Pick a game or book in our Etsy shop and check out securely.</p></div>
+  <div class="step"><div class="n">02</div><h4>Download</h4><p>Your PDF files unlock right away, in US Letter and A4.</p></div>
+  <div class="step"><div class="n">03</div><h4>Print &amp; enjoy</h4><p>Print only the pages you need, at home or at school.</p></div>
+ </div>
+</div></section>
+
+<div class="final"><h2>Make this Christmas a little more together.</h2><p>Instant downloads, ready to print tonight.</p><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop BrainVault on Etsy</a></div>
+
+<footer>
+ <img src="img/logo_gold.png" alt="BrainVault Publications">
+ <div class="fl"><a href="https://www.etsy.com/shop/BrainVaultBooks">Etsy shop</a><a href="#collections">Collections</a><a href="privacy.html">Privacy Policy</a></div>
+ <div>© 2026 BrainVault Publications. All rights reserved.</div>
+</footer>
+</body>
+</html>
