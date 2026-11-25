@@ -99,6 +99,23 @@ section{padding:96px 0}
 .step h4{font-family:Fraunces,serif;font-weight:600;font-size:22px;margin:10px 0 8px}
 .step p{color:var(--muted);line-height:1.6;margin:0;font-size:15px}
 .price{display:inline-block;margin-top:10px;font-weight:800;font-size:14px;color:#8a6a2f}
+.vlist{max-width:560px;margin:6px 0 8px;background:#fff;border:1px solid #e6d9c6;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(40,25,15,.06);text-align:left}
+.vlist ul{list-style:none;margin:0!important;padding:0!important}
+.vlist li{margin:0!important;padding:0!important;border-bottom:1px solid #efe6d8}
+.vlist li::before{display:none!important;content:none!important}
+.vlist li a{display:grid;grid-template-columns:64px 1fr auto 18px;align-items:center;gap:12px;padding:14px 18px;color:inherit;text-decoration:none;transition:background .2s}
+.vlist li a:hover{background:#fbf6ee}
+.vlist .n{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#a8813a}
+.vlist .t{font-family:Fraunces,serif;font-weight:600;font-size:17px;line-height:1.25}
+.vlist .p{font-weight:800;font-size:15px;color:#1c1714}
+.vlist .a{color:#b8924a;font-weight:800}
+.vbundle{display:grid;grid-template-columns:1fr auto 18px;align-items:center;gap:12px;padding:16px 18px;background:#1c1714;color:#f3ebe0;text-decoration:none;transition:background .2s}
+.vbundle:hover{background:#2a221d}
+.vbundle b{display:block;font-family:Fraunces,serif;font-weight:600;font-size:18px;color:#fff}
+.vbundle small{display:block;font-size:13px;color:#e3c58a;font-weight:700;margin-top:2px}
+.vbundle .p{color:#e3c58a;font-size:17px}
+.vbundle .a{color:#e3c58a}
+@media(max-width:420px){.vlist li a{grid-template-columns:54px 1fr auto 14px;gap:8px;padding:13px 14px}.vlist .t{font-size:16px}.vbundle{padding:15px 14px}}
 .pricenote{font-size:14.5px;font-weight:700;color:#8a6a2f;margin:-8px 0 18px}
 .signup{background:#1c1714;color:#f3ebe0;padding:80px 24px;text-align:center}
 .signup h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,3.8vw,42px);margin:10px 0 12px}
@@ -219,7 +236,7 @@ footer .fl a:hover{color:var(--gold2)}
  </div>
  <div style="height:56px"></div>
  <div class="head"><div class="eyebrow">For adults &amp; families</div><h2>Christmas Activity Books</h2><p>Five printable books for cozy evenings. Buy one from $4.99, or get all five together for $19.99.</p></div>
- <div class="vols" style="justify-content:center"><a href="https://www.etsy.com/listing/4623554509">Christmas Trivia</a><a href="https://www.etsy.com/listing/4623409397">Large-Print Word Search</a><a href="https://www.etsy.com/listing/4623568536">Coloring Pages</a><a href="https://www.etsy.com/listing/4623566055">Word Games</a><a href="https://www.etsy.com/listing/4623571639">Party Games</a><a class="all" href="https://www.etsy.com/listing/4624330439">All 5 books · Bundle</a></div>
+ <div class="vlist" style="margin-left:auto;margin-right:auto"><ul><li><a href="https://www.etsy.com/listing/4623554509"><span class="n">Book 1</span><span class="t">Christmas Trivia</span><span class="p">$4.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4623409397"><span class="n">Book 2</span><span class="t">Word Search</span><span class="p">$6.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4623568536"><span class="n">Book 3</span><span class="t">Coloring Pages</span><span class="p">$4.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4623566055"><span class="n">Book 4</span><span class="t">Word Games</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4623571639"><span class="n">Book 5</span><span class="t">Party Games</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624330439"><span><b>All 5 books bundle</b><small>All five books · save $8.96</small></span><span class="p">$19.99</span><span class="a" aria-hidden="true">→</span></a></div>
  <div style="height:56px"></div>
  <div class="feature">
   <div class="t"><div class="eyebrow">Best value</div><h3>All 4 Christmas games in one bundle</h3>
@@ -235,19 +252,15 @@ footer .fl a:hover{color:var(--gold2)}
   <div class="eyebrow">Everyday Moments Together</div>
   <h2>Gentle Cognitive Activities for Seniors &amp; Their Care Partners</h2>
   <p>A large-print series for seniors living with dementia and the people who care for them. Each page offers one calm activity with a familiar picture, so you can look, talk and share a moment together.</p>
-  <div class="vols"><a href="https://www.etsy.com/listing/4624298390">Vol. 1 · In the Kitchen</a><a href="https://www.etsy.com/listing/4624292185">Vol. 2 · In the Garden</a><a href="https://www.etsy.com/listing/4624298722">Vol. 3 · Out and About</a><a href="https://www.etsy.com/listing/4624292429">Vol. 4 · Music We Love</a><a href="https://www.etsy.com/listing/4624292577">Vol. 5 · Making Things</a><a class="all" href="https://www.etsy.com/listing/4624315361">All 5 books · Set</a></div>
-  <p class="pricenote">$5.99 per book, or $19.99 for all five</p>
   <ul><li>One activity per page, in large print</li><li>Familiar everyday pictures to look at and talk about</li><li>A companion page with simple tips for sharing the book</li></ul>
-  <div class="cta"><a class="btn btn-gold btn-lg" href="https://www.etsy.com/listing/4624315361">See the 5-book set</a><a class="btn btn-outline" href="https://www.etsy.com/listing/4624298390">Start with Vol. 1</a></div>
+  <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4624298390"><span class="n">Vol. 1</span><span class="t">In the Kitchen</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624292185"><span class="n">Vol. 2</span><span class="t">In the Garden</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624298722"><span class="n">Vol. 3</span><span class="t">Out and About</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624292429"><span class="n">Vol. 4</span><span class="t">Music We Love</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624292577"><span class="n">Vol. 5</span><span class="t">Making Things</span><span class="p">$5.99</span><span class="a" aria-hidden="true">→</span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624315361"><span><b>The complete 5-book set</b><small>All five volumes · save $9.96</small></span><span class="p">$19.99</span><span class="a" aria-hidden="true">→</span></a></div>
  </div>
  <div class="talk">
   <div>
    <div class="eyebrow">Talk Together Cards</div>
    <h2>Conversation Cards for Seniors</h2>
    <p>Printable large-print cards with gentle questions that invite stories and memories. Five themed decks of 72 cards each, 360 prompts in all, in US Letter and A4.</p>
-   <p class="pricenote">$3.99 per deck, or $12.95 for all five</p>
-   <div class="vols"><a href="https://www.etsy.com/listing/4624771899">Everyday Memories</a><a href="https://www.etsy.com/listing/4624777956">Childhood &amp; Home</a><a href="https://www.etsy.com/listing/4624772941">Work &amp; Hobbies</a><a href="https://www.etsy.com/listing/4624773227">Holidays &amp; Traditions</a><a href="https://www.etsy.com/listing/4624779284">Music &amp; Movies</a><a class="all" href="https://www.etsy.com/listing/4624832148">All 5 decks · Bundle</a></div>
-   <div class="cta"><a class="btn btn-gold btn-lg" href="https://www.etsy.com/listing/4624832148">See the 5-deck bundle</a><a class="btn btn-outline" href="https://www.etsy.com/listing/4624771899">Start with Everyday Memories</a></div>
+   <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4624771899"><span class="n">Deck 1</span><span class="t">Everyday Memories</span><span class="p">$3.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624777956"><span class="n">Deck 2</span><span class="t">Childhood &amp; Home</span><span class="p">$3.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624772941"><span class="n">Deck 3</span><span class="t">Work &amp; Hobbies</span><span class="p">$3.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624773227"><span class="n">Deck 4</span><span class="t">Holidays &amp; Traditions</span><span class="p">$3.99</span><span class="a" aria-hidden="true">→</span></a></li><li><a href="https://www.etsy.com/listing/4624779284"><span class="n">Deck 5</span><span class="t">Music &amp; Movies</span><span class="p">$3.99</span><span class="a" aria-hidden="true">→</span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624832148"><span><b>All 5 decks bundle</b><small>360 prompts · save $7.00</small></span><span class="p">$12.95</span><span class="a" aria-hidden="true">→</span></a></div>
   </div>
   <img src="img/seniors.jpg" alt="Printed large-print conversation cards from the Everyday Memories deck" loading="lazy">
  </div>
