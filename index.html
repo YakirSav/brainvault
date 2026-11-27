@@ -142,6 +142,26 @@ section{padding:96px 0}
 .games.two{grid-template-columns:repeat(2,1fr);max-width:900px;margin:0 auto}
 .games.two .game img{aspect-ratio:4/3}
 @media(max-width:600px){.games.two{grid-template-columns:1fr}}
+.finder{max-width:900px;margin:0 auto;background:#fff;border:1px solid #e6d9c6;border-radius:22px;padding:28px 28px 30px;box-shadow:0 10px 30px rgba(40,25,15,.06)}
+.fq{margin-bottom:22px}
+.fq h4{margin:0 0 12px;font-family:Fraunces,serif;font-weight:600;font-size:19px;display:flex;align-items:center;gap:10px}
+.fq h4 span{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#1c1714;color:#e3c58a;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800}
+.fopts{display:flex;flex-wrap:wrap;gap:9px}
+.fopts button{font:inherit;font-size:14.5px;font-weight:700;padding:10px 16px;border-radius:999px;border:1px solid #e6d9c6;background:#fff;color:#1c1714;cursor:pointer;transition:all .15s}
+.fopts button:hover{border-color:#c9a45c}
+.fopts button.on{background:#1c1714;border-color:#1c1714;color:#fff}
+#fres:empty{display:none}
+#fres{border-top:1px solid #efe6d8;padding-top:22px;margin-top:4px}
+#fres h5{margin:0 0 14px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#a8813a}
+.fcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fcard{border:1px solid #efe6d8;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;background:#fffdf9}
+.fcard>a img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.fcard>div{padding:13px 14px 15px;display:flex;flex-direction:column;flex:1}
+.fcard b.t{font-family:Fraunces,serif;font-weight:600;font-size:16px;line-height:1.25}
+.fcard small{color:var(--muted);font-size:13.5px;line-height:1.45;margin:5px 0 12px}
+.fcard .gbtn{margin-top:auto}
+.freset{margin-top:16px;background:none;border:0;font:inherit;font-size:14px;color:#8a6a2f;text-decoration:underline;cursor:pointer}
+@media(max-width:700px){.finder{padding:22px 16px}.fcards{grid-template-columns:1fr}.fcard{flex-direction:row}.fcard>a{flex:none;width:118px}.fcard>a img{height:100%;aspect-ratio:auto}}
 .pricenote{font-size:14.5px;font-weight:700;color:#8a6a2f;margin:-8px 0 18px}
 .signup{background:#1c1714;color:#f3ebe0;padding:80px 24px;text-align:center}
 .signup h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,3.8vw,42px);margin:10px 0 12px}
@@ -212,14 +232,14 @@ footer .fl a:hover{color:var(--gold2)}
 <div id="salebar" hidden><b>Black Friday Sale:</b> 25% off everything in our Etsy shop, through Monday, Nov 30. <a href="https://www.etsy.com/shop/BrainVaultBooks">Shop the sale →</a></div>
 <nav><div class="wrap">
  <a href="#"><img src="img/logo_gold.png" alt="BrainVault Publications"></a>
- <div class="links"><a href="#about">About</a><a href="#collections">Collections</a><a href="#christmas" data-season="xmas">Christmas</a><a href="#valentine" data-season="val">Valentine</a><a href="#party">Party Kits</a><a href="#cognitive">Seniors</a><a href="#amazon">Books</a><a class="pin" href="https://www.pinterest.com/brainvaultbooks/" aria-label="BrainVault on Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.67.97-2.92 2.17-2.92 1.02 0 1.52.77 1.52 1.69 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.42 0-5.43 2.57-5.43 5.22 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.41.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg></a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
+ <div class="links"><a href="#about">About</a><a href="#finder">Gift Finder</a><a href="#collections">Collections</a><a href="#christmas" data-season="xmas">Christmas</a><a href="#valentine" data-season="val">Valentine</a><a href="#party">Party Kits</a><a href="#cognitive">Seniors</a><a href="#amazon">Books</a><a class="pin" href="https://www.pinterest.com/brainvaultbooks/" aria-label="BrainVault on Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.67.97-2.92 2.17-2.92 1.02 0 1.52.77 1.52 1.69 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.42 0-5.43 2.57-5.43 5.22 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.41.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg></a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
 </div></nav>
 
 <header class="hero"><div class="bg"></div><div class="wrap">
  <div class="eyebrow">Printable games &amp; activity books</div>
  <h1 style="margin-top:14px">Printables that bring people <em>together</em>.</h1>
  <p>Games, puzzles and activity books for kids, families and seniors—designed with care, delivered instantly, ready to print at home or at school.</p>
- <div class="cta"><a class="btn btn-gold btn-lg" href="https://www.etsy.com/shop/BrainVaultBooks">Visit the shop</a><a class="btn btn-line" href="#collections">Explore collections</a></div>
+ <div class="cta"><a class="btn btn-gold btn-lg" href="https://www.etsy.com/shop/BrainVaultBooks">Visit the shop</a><a class="btn btn-line" href="#finder">Find the perfect printable</a></div>
 </div></header>
 
 <div class="strip"><div class="wrap">
@@ -252,6 +272,19 @@ footer .fl a:hover{color:var(--gold2)}
   <a class="card" data-season="post" data-val="1" href="#valentine"><div class="img" style="background-image:url(img/vleft.jpg)"><span class="badge">Kids · ages 3–10</span></div><div class="t"><h3>Valentine Games for Kids</h3><p>A picture-and-riddle scavenger hunt and a left-right party game for class parties and family fun.</p><span class="more">From <span class="pr" data-p="3.99">$3.99</span> · See the games →</span></div></a>
   <a class="card" data-season="post" href="#party"><div class="img" style="background-image:url(img/detective.jpg)"><span class="badge">Kids · ages 8–11</span></div><div class="t"><h3>Adventure Party Kits</h3><p>Printable birthday adventures where kids work in teams to solve puzzles and crack the case.</p><span class="more"><span class="pr" data-p="9.99">$9.99</span> · See the kit →</span></div></a>
   <a class="card" href="#cognitive"><div class="img" style="background-image:url(img/seniors.jpg)"><span class="badge">Seniors</span></div><div class="t"><h3>For Seniors &amp; Care Partners</h3><p>Large-print activity books and conversation cards made for calm, shared time with older adults and their families.</p><span class="more">From <span class="pr" data-p="3.99">$3.99</span> · See the series →</span></div></a>
+ </div>
+</div></section>
+
+<section id="finder" style="background:var(--sand)"><div class="wrap">
+ <div class="head"><div class="eyebrow">Not sure where to start?</div><h2>Find the perfect printable</h2><p>Answer three quick questions and we'll suggest the best fit.</p></div>
+ <div class="finder">
+  <div class="fq" data-q="who"><h4><span>1</span>Who is it for?</h4><div class="fopts">
+   <button type="button" data-v="little">Little kids (3–7)</button><button type="button" data-v="big">Big kids (8–11)</button><button type="button" data-v="adults">Adults &amp; families</button><button type="button" data-v="seniors">Seniors &amp; care partners</button></div></div>
+  <div class="fq" data-q="when"><h4><span>2</span>What's the occasion?</h4><div class="fopts">
+   <button type="button" data-v="xmas" data-season="xmas">Christmas</button><button type="button" data-v="val" data-val="1">Valentine's Day</button><button type="button" data-v="bday">Birthday party</button><button type="button" data-v="class">Class party</button><button type="button" data-v="home">A cozy day at home</button></div></div>
+  <div class="fq" data-q="size"><h4><span>3</span>How many people?</h4><div class="fopts">
+   <button type="button" data-v="one">1–2 people</button><button type="button" data-v="small">A small group (3–10)</button><button type="button" data-v="crowd">A big group (10+)</button></div></div>
+  <div id="fres" aria-live="polite"></div>
  </div>
 </div></section>
 
@@ -351,6 +384,9 @@ footer .fl a:hover{color:var(--gold2)}
  <div>© 2026 BrainVault Publications. All rights reserved.</div>
 </footer>
 <script>
+window.BV_PRODUCTS=[{"t": "Christmas Picture Bingo", "d": "Unique picture cards plus calling cards, in 30, 50 or 100 cards.", "img": "pins/bingo50_a.jpg", "u": "https://www.etsy.com/listing/4624565317", "p": 4.99, "who": ["little", "big", "adults"], "when": ["xmas", "class"], "size": ["small", "crowd"], "s": "xmas"}, {"t": "Where Will Your Gift Land?", "d": "Left-right gift exchange game with 12 read-aloud stories.", "img": "pins/gift_b.jpg", "u": "https://www.etsy.com/listing/4624746772", "p": 4.99, "who": ["big", "adults", "little"], "when": ["xmas", "class"], "size": ["small", "crowd"], "s": "xmas"}, {"t": "Christmas Scavenger Hunt", "d": "Picture clues for ages 3–6, riddles for ages 6–10.", "img": "pins/hunt_a.jpg", "u": "https://www.etsy.com/listing/4624778696", "p": 4.49, "who": ["little", "big"], "when": ["xmas", "home"], "size": ["one", "small"], "s": "xmas"}, {"t": "Kids Christmas Activity Pack", "d": "80 activities in two age levels, with answer keys.", "img": "pins/kids_b.jpg", "u": "https://www.etsy.com/listing/4624773571", "p": 4.99, "who": ["little", "big"], "when": ["xmas", "home", "class"], "size": ["one", "small", "crowd"], "s": "xmas"}, {"t": "Christmas Kids Games Bundle", "d": "Bingo, left-right game, scavenger hunt and the activity pack.", "img": "pins/bundle_a.jpg", "u": "https://www.etsy.com/listing/4624838355", "p": 9.99, "who": ["little", "big"], "when": ["xmas", "class"], "size": ["crowd", "small"], "s": "xmas"}, {"t": "Valentine Scavenger Hunt", "d": "36 picture and riddle clue cards for ages 3–10.", "img": "img/vhunt.jpg", "u": "https://www.etsy.com/listing/4625637170", "p": 4.49, "who": ["little", "big"], "when": ["val", "home", "class"], "size": ["one", "small"], "s": "val"}, {"t": "Pass the Valentine! Left Right Game", "d": "12 read-aloud stories for class and family parties.", "img": "img/vleft.jpg", "u": "https://www.etsy.com/listing/4625373820", "p": 3.99, "who": ["little", "big"], "when": ["val", "class"], "size": ["small", "crowd"], "s": "val"}, {"t": "Detective Birthday Game", "d": "7 puzzle stations for 4–12 players, ages 8–11.", "img": "img/detective.jpg", "u": "https://www.etsy.com/listing/4625823838", "p": 9.99, "who": ["big"], "when": ["bday", "home"], "size": ["small", "crowd"], "s": ""}, {"t": "Christmas Trivia Game", "d": "60 questions in 10 rounds for adults and families.", "img": "img/books.jpg", "u": "https://www.etsy.com/listing/4623554509", "p": 4.99, "who": ["adults", "seniors"], "when": ["xmas"], "size": ["small", "crowd"], "s": "xmas"}, {"t": "Christmas Party Games", "d": "20 holiday group activities for adults, seniors and families.", "img": "img/books.jpg", "u": "https://www.etsy.com/listing/4623571639", "p": 5.99, "who": ["adults", "seniors"], "when": ["xmas"], "size": ["small", "crowd"], "s": "xmas"}, {"t": "Christmas Word Search Book", "d": "50 large-print puzzles for adults and seniors.", "img": "img/books.jpg", "u": "https://www.etsy.com/listing/4623409397", "p": 6.99, "who": ["adults", "seniors"], "when": ["xmas", "home"], "size": ["one"], "s": "xmas"}, {"t": "Christmas Activity Book Bundle", "d": "Trivia, word search, coloring, wordplay and party games.", "img": "img/books.jpg", "u": "https://www.etsy.com/listing/4624330439", "p": 19.99, "who": ["adults", "seniors"], "when": ["xmas", "home"], "size": ["one", "small"], "s": "xmas"}, {"t": "Everyday Moments Together, 5-Book Set", "d": "Large-print activities for seniors living with dementia and their care partners.", "img": "img/cognitive.jpg", "u": "https://www.etsy.com/listing/4624315361", "p": 19.99, "who": ["seniors"], "when": ["home"], "size": ["one", "small"], "s": ""}, {"t": "In the Kitchen, Vol. 1", "d": "Start the series with one calm, large-print book.", "img": "img/cognitive.jpg", "u": "https://www.etsy.com/listing/4624298390", "p": 5.99, "who": ["seniors"], "when": ["home"], "size": ["one"], "s": ""}, {"t": "Conversation Cards, 5-Deck Bundle", "d": "360 large-print prompts that invite stories and memories.", "img": "img/seniors.jpg", "u": "https://www.etsy.com/listing/4624832148", "p": 12.95, "who": ["seniors", "adults"], "when": ["home", "xmas"], "size": ["one", "small"], "s": ""}, {"t": "Golden Years Word Search (paperback)", "d": "100 easy large-print puzzles, on Amazon.", "img": "img/kdp_golden.jpg", "u": "https://www.amazon.com/dp/B0HSNGZCV6", "p": 0, "who": ["seniors", "adults"], "when": ["home"], "size": ["one"], "s": ""}, {"t": "Large Print Sudoku (paperback)", "d": "200 puzzles from easy to medium, on Amazon.", "img": "img/kdp_sudoku.jpg", "u": "https://www.amazon.com/dp/B0HS9GNWPS", "p": 0, "who": ["adults", "seniors"], "when": ["home"], "size": ["one"], "s": ""}];
+</script>
+<script>
 (function(){
  var now=new Date();
  // Etsy sale: 25% off everything. Shown only until the end time below, never after.
@@ -370,12 +406,39 @@ footer .fl a:hover{color:var(--gold2)}
  document.querySelectorAll('[data-season="xmas"]').forEach(function(e){if(!xmas)e.style.display='none'});
  document.querySelectorAll('[data-season="post"]').forEach(function(e){if(xmas)e.style.display='none'});
  document.querySelectorAll('[data-season="val"],[data-val]').forEach(function(e){if(!val)e.style.display='none'});
+ window.BV_PRICE=function(p){if(!p)return '';return '<span class="pr">'+(on?'<s>'+f(p)+'</s>'+f(sp(p)):f(p))+'</span>'};
+ window.BV_SEASON={xmas:xmas,val:val};
  if(!xmas){
   var v=document.getElementById('valentine'),c=document.getElementById('collections');
   if(v&&c)c.parentNode.insertBefore(v,c.nextSibling);
   document.getElementById('nl_h').textContent='Get 2 free large-print word searches';
   document.getElementById('nl_kind').textContent='';
   document.getElementById('nl_dl').setAttribute('href','free/BrainVault_Free_Large_Print_Word_Search.pdf');
+ }
+})();
+</script>
+<script>
+(function(){
+ var A={},box=document.querySelector('.finder'),res=document.getElementById('fres');
+ if(!box)return;
+ box.querySelectorAll('.fq button').forEach(function(b){b.addEventListener('click',function(){
+  var q=b.closest('.fq');
+  q.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
+  b.classList.add('on');A[q.dataset.q]=b.dataset.v;show();
+ })});
+ function show(){
+  if(!(A.who&&A.when&&A.size)){res.innerHTML='';return}
+  var S=window.BV_SEASON||{xmas:true,val:true};
+  var list=window.BV_PRODUCTS.filter(function(x){return (x.s!=='xmas'||S.xmas)&&(x.s!=='val'||S.val)&&x.who.indexOf(A.who)>-1});
+  list.forEach(function(x){x.sc=(x.when.indexOf(A.when)>-1?3:0)+(x.size.indexOf(A.size)>-1?1:0)+(x.who[0]===A.who?.5:0)});
+  list.sort(function(a,b){return b.sc-a.sc});
+  var top=list.filter(function(x){return x.sc>=3}).slice(0,3),note='';
+  if(!list.length){res.innerHTML='<h5>Coming soon</h5><p style="margin:0;color:var(--muted);font-size:15px">New printables for this age are on the way. <a href="#newsletter" style="text-decoration:underline">Join our list</a> to hear first, and get 2 free puzzles.</p><button type="button" class="freset">Start over</button>';res.querySelector('.freset').addEventListener('click',function(){A={};box.querySelectorAll('.fq button').forEach(function(x){x.classList.remove('on')});res.innerHTML=''});return}
+  if(!top.length){top=list.slice(0,3);note='<p style="margin:-6px 0 14px;color:var(--muted);font-size:14.5px">We don\'t have a printable made just for that yet, so here are our closest picks.</p>'}
+  res.innerHTML='<h5>Our picks for you</h5>'+note+'<div class="fcards">'+top.map(function(x){
+   var amz=x.u.indexOf('amazon')>-1;
+   return '<div class="fcard"><a href="'+x.u+'"><img src="'+x.img+'" alt="" loading="lazy"></a><div><b class="t">'+x.t+'</b><small>'+x.d+'</small><a class="gbtn" href="'+x.u+'">'+(amz?'Buy on Amazon':'Buy <b>'+window.BV_PRICE(x.p)+'</b>')+'</a></div></div>'}).join('')+'</div><button type="button" class="freset">Start over</button>';
+  res.querySelector('.freset').addEventListener('click',function(){A={};box.querySelectorAll('.fq button').forEach(function(x){x.classList.remove('on')});res.innerHTML='';box.scrollIntoView({behavior:'smooth',block:'start'})});
  }
 })();
 </script>
