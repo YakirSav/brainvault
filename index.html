@@ -136,6 +136,12 @@ section{padding:96px 0}
 .gbtn.alt{background:#fff;color:#1c1714;border:1px solid #e6d9c6}
 @media(max-width:600px){.gbtn{font-size:12.5px;padding:9px 8px}}
 .gbtn.alt b{color:#8a6a2f}.gbtn.alt:hover{background:#fbf6ee}
+#salebar{background:#b0263a;color:#fff;text-align:center;font-size:14px;padding:9px 14px;line-height:1.4}
+#salebar a{color:#fff;font-weight:800;text-decoration:underline;margin-left:6px}
+.pr s{opacity:.6;font-weight:600;margin-right:5px}
+.games.two{grid-template-columns:repeat(2,1fr);max-width:900px;margin:0 auto}
+.games.two .game img{aspect-ratio:4/3}
+@media(max-width:600px){.games.two{grid-template-columns:1fr}}
 .pricenote{font-size:14.5px;font-weight:700;color:#8a6a2f;margin:-8px 0 18px}
 .signup{background:#1c1714;color:#f3ebe0;padding:80px 24px;text-align:center}
 .signup h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,3.8vw,42px);margin:10px 0 12px}
@@ -203,9 +209,10 @@ footer .fl a:hover{color:var(--gold2)}
 </head>
 <body>
 
+<div id="salebar" hidden><b>Black Friday Sale:</b> 25% off everything in our Etsy shop, through Monday, Nov 30. <a href="https://www.etsy.com/shop/BrainVaultBooks">Shop the sale →</a></div>
 <nav><div class="wrap">
  <a href="#"><img src="img/logo_gold.png" alt="BrainVault Publications"></a>
- <div class="links"><a href="#about">About</a><a href="#collections">Collections</a><a href="#christmas">Christmas</a><a href="#cognitive">Seniors</a><a href="#amazon">Books</a><a class="pin" href="https://www.pinterest.com/brainvaultbooks/" aria-label="BrainVault on Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.67.97-2.92 2.17-2.92 1.02 0 1.52.77 1.52 1.69 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.42 0-5.43 2.57-5.43 5.22 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.41.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg></a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
+ <div class="links"><a href="#about">About</a><a href="#collections">Collections</a><a href="#christmas" data-season="xmas">Christmas</a><a href="#valentine" data-season="val">Valentine</a><a href="#party">Party Kits</a><a href="#cognitive">Seniors</a><a href="#amazon">Books</a><a class="pin" href="https://www.pinterest.com/brainvaultbooks/" aria-label="BrainVault on Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.94-.2-2.4.04-3.43l1.4-5.96s-.36-.72-.36-1.78c0-1.67.97-2.92 2.17-2.92 1.02 0 1.52.77 1.52 1.69 0 1.03-.66 2.57-1 4-.28 1.2.6 2.17 1.78 2.17 2.13 0 3.77-2.25 3.77-5.5 0-2.87-2.07-4.88-5.02-4.88-3.42 0-5.43 2.57-5.43 5.22 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34l-.33 1.37c-.05.22-.18.27-.41.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.78 2.75-7.26 7.92-7.26 4.16 0 7.4 2.97 7.4 6.93 0 4.13-2.6 7.46-6.22 7.46-1.21 0-2.36-.63-2.75-1.38l-.75 2.85c-.27 1.04-1 2.35-1.49 3.15A12 12 0 1 0 12 0z"/></svg></a><a class="btn btn-gold" href="https://www.etsy.com/shop/BrainVaultBooks">Shop on Etsy</a></div>
 </div></nav>
 
 <header class="hero"><div class="bg"></div><div class="wrap">
@@ -238,31 +245,53 @@ footer .fl a:hover{color:var(--gold2)}
 </div></section>
 
 <section id="collections" class="collections"><div class="wrap">
- <div class="head"><div class="eyebrow">Our collections</div><h2>Something for every age</h2><p>Three collections, one idea: time well spent together, on paper.</p></div>
+ <div class="head"><div class="eyebrow">Our collections</div><h2>Something for every age</h2><p>Different ages, one idea: time well spent together, on paper.</p></div>
  <div class="coll">
-  <a class="card" href="#christmas"><div class="img" style="background-image:url(pins/bundle_a.jpg);background-position:center 62%"><span class="badge">Kids · ages 3–10</span></div><div class="t"><h3>Christmas Games for Kids</h3><p>Picture bingo, a left-right gift exchange, a scavenger hunt and an 80-activity pack for class parties and Christmas break.</p><span class="more">From $3.99 · See the games →</span></div></a>
-  <a class="card" href="https://www.etsy.com/listing/4624330439"><div class="img" style="background-image:url(img/books.jpg)"><span class="badge">Family</span></div><div class="t"><h3>Christmas Activity Books</h3><p>Five printable books for cozy evenings: Christmas trivia, large-print word searches, coloring, wordplay and parlor games.</p><span class="more">From $4.99 · View on Etsy →</span></div></a>
-  <a class="card" href="#cognitive"><div class="img" style="background-image:url(img/seniors.jpg)"><span class="badge">Seniors</span></div><div class="t"><h3>For Seniors &amp; Care Partners</h3><p>Large-print activity books and conversation cards made for calm, shared time with older adults and their families.</p><span class="more">From $3.99 · See the series →</span></div></a>
+  <a class="card" data-season="xmas" href="#christmas"><div class="img" style="background-image:url(pins/bundle_a.jpg);background-position:center 62%"><span class="badge">Kids · ages 3–10</span></div><div class="t"><h3>Christmas Games for Kids</h3><p>Picture bingo, a left-right gift exchange, a scavenger hunt and an 80-activity pack for class parties and Christmas break.</p><span class="more">From <span class="pr" data-p="3.99">$3.99</span> · See the games →</span></div></a>
+  <a class="card" data-season="xmas" href="https://www.etsy.com/listing/4624330439"><div class="img" style="background-image:url(img/books.jpg)"><span class="badge">Family</span></div><div class="t"><h3>Christmas Activity Books</h3><p>Five printable books for cozy evenings: Christmas trivia, large-print word searches, coloring, wordplay and parlor games.</p><span class="more">From <span class="pr" data-p="4.99">$4.99</span> · View on Etsy →</span></div></a>
+  <a class="card" data-season="post" data-val="1" href="#valentine"><div class="img" style="background-image:url(img/vleft.jpg)"><span class="badge">Kids · ages 3–10</span></div><div class="t"><h3>Valentine Games for Kids</h3><p>A picture-and-riddle scavenger hunt and a left-right party game for class parties and family fun.</p><span class="more">From <span class="pr" data-p="3.99">$3.99</span> · See the games →</span></div></a>
+  <a class="card" data-season="post" href="#party"><div class="img" style="background-image:url(img/detective.jpg)"><span class="badge">Kids · ages 8–11</span></div><div class="t"><h3>Adventure Party Kits</h3><p>Printable birthday adventures where kids work in teams to solve puzzles and crack the case.</p><span class="more"><span class="pr" data-p="9.99">$9.99</span> · See the kit →</span></div></a>
+  <a class="card" href="#cognitive"><div class="img" style="background-image:url(img/seniors.jpg)"><span class="badge">Seniors</span></div><div class="t"><h3>For Seniors &amp; Care Partners</h3><p>Large-print activity books and conversation cards made for calm, shared time with older adults and their families.</p><span class="more">From <span class="pr" data-p="3.99">$3.99</span> · See the series →</span></div></a>
  </div>
 </div></section>
 
-<section id="christmas"><div class="wrap">
+<section id="christmas" data-season="xmas"><div class="wrap">
  <div class="head"><div class="eyebrow">Christmas 2026</div><h2>Christmas Games for Kids</h2><p>Each game comes with a short guide, so any adult can run it in minutes.</p></div>
  <div class="games">
-  <div class="game"><a href="https://www.etsy.com/listing/4624565317"><img src="pins/bingo50_a.jpg" alt="Christmas picture bingo" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624565317">Christmas Picture Bingo</a></h4><p>Unique cards with big pictures and words, plus calling cards.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624565317">50 cards <b>$4.99</b></a><a class="gbtn alt" href="https://www.etsy.com/listing/4624569602">30 cards <b>$3.99</b></a><a class="gbtn alt" href="https://www.etsy.com/listing/4624570306">100 cards <b>$5.99</b></a></div></div></div>
-  <div class="game"><a href="https://www.etsy.com/listing/4624746772"><img src="pins/gift_b.jpg" alt="Left-right gift exchange game" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624746772">Where Will Your Gift Land?</a></h4><p>12 read-aloud stories—pass the gift on every LEFT and RIGHT.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624746772">Buy <b>$4.99</b></a></div></div></div>
-  <div class="game"><a href="https://www.etsy.com/listing/4624778696"><img src="pins/hunt_a.jpg" alt="Christmas scavenger hunt" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624778696">Christmas Scavenger Hunt</a></h4><p>Pictures for ages 3–6, riddles for ages 6–10, indoors or out.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624778696">Buy <b>$4.49</b></a></div></div></div>
-  <div class="game"><a href="https://www.etsy.com/listing/4624773571"><img src="pins/kids_b.jpg" alt="Kids Christmas activity pack" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624773571">Kids Activity Pack</a></h4><p>80 activities in two age levels, with answer keys.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624773571">Buy <b>$4.99</b></a></div></div></div>
+  <div class="game"><a href="https://www.etsy.com/listing/4624565317"><img src="pins/bingo50_a.jpg" alt="Christmas picture bingo" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624565317">Christmas Picture Bingo</a></h4><p>Unique cards with big pictures and words, plus calling cards.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624565317">50 cards <b><span class="pr" data-p="4.99">$4.99</span></b></a><a class="gbtn alt" href="https://www.etsy.com/listing/4624569602">30 cards <b><span class="pr" data-p="3.99">$3.99</span></b></a><a class="gbtn alt" href="https://www.etsy.com/listing/4624570306">100 cards <b><span class="pr" data-p="5.99">$5.99</span></b></a></div></div></div>
+  <div class="game"><a href="https://www.etsy.com/listing/4624746772"><img src="pins/gift_b.jpg" alt="Left-right gift exchange game" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624746772">Where Will Your Gift Land?</a></h4><p>12 read-aloud stories—pass the gift on every LEFT and RIGHT.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624746772">Buy <b><span class="pr" data-p="4.99">$4.99</span></b></a></div></div></div>
+  <div class="game"><a href="https://www.etsy.com/listing/4624778696"><img src="pins/hunt_a.jpg" alt="Christmas scavenger hunt" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624778696">Christmas Scavenger Hunt</a></h4><p>Pictures for ages 3–6, riddles for ages 6–10, indoors or out.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624778696">Buy <b><span class="pr" data-p="4.49">$4.49</span></b></a></div></div></div>
+  <div class="game"><a href="https://www.etsy.com/listing/4624773571"><img src="pins/kids_b.jpg" alt="Kids Christmas activity pack" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4624773571">Kids Activity Pack</a></h4><p>80 activities in two age levels, with answer keys.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4624773571">Buy <b><span class="pr" data-p="4.99">$4.99</span></b></a></div></div></div>
  </div>
  <div style="height:56px"></div>
- <div class="head"><div class="eyebrow">For adults &amp; families</div><h2>Christmas Activity Books</h2><p>Five printable books for cozy evenings. Buy one from $4.99, or get all five together for $19.99.</p></div>
- <div class="vlist" style="margin-left:auto;margin-right:auto"><ul><li><a href="https://www.etsy.com/listing/4623554509"><span class="n">Book 1</span><span class="t">Christmas Trivia</span><span class="buy">Buy <b>$4.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4623409397"><span class="n">Book 2</span><span class="t">Word Search</span><span class="buy">Buy <b>$6.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4623568536"><span class="n">Book 3</span><span class="t">Coloring Pages</span><span class="buy">Buy <b>$4.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4623566055"><span class="n">Book 4</span><span class="t">Word Games</span><span class="buy">Buy <b>$5.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4623571639"><span class="n">Book 5</span><span class="t">Party Games</span><span class="buy">Buy <b>$5.99</b></span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624330439"><span><b>All 5 books bundle</b><small>All five books · save $8.96</small></span><span class="buy gold">Buy all <b>$19.99</b></span></a></div>
+ <div class="head"><div class="eyebrow">For adults &amp; families</div><h2>Christmas Activity Books</h2><p>Five printable books for cozy evenings. Buy one from <span class="pr" data-p="4.99">$4.99</span>, or get all five together for <span class="pr" data-p="19.99">$19.99</span>.</p></div>
+ <div class="vlist" style="margin-left:auto;margin-right:auto"><ul><li><a href="https://www.etsy.com/listing/4623554509"><span class="n">Book 1</span><span class="t">Christmas Trivia</span><span class="buy">Buy <b><span class="pr" data-p="4.99">$4.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4623409397"><span class="n">Book 2</span><span class="t">Word Search</span><span class="buy">Buy <b><span class="pr" data-p="6.99">$6.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4623568536"><span class="n">Book 3</span><span class="t">Coloring Pages</span><span class="buy">Buy <b><span class="pr" data-p="4.99">$4.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4623566055"><span class="n">Book 4</span><span class="t">Word Games</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4623571639"><span class="n">Book 5</span><span class="t">Party Games</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624330439"><span><b>All 5 books bundle</b><small>All five books · save <span class="sv" data-sum="28.95">$8.96</span></small></span><span class="buy gold">Buy all <b><span class="pr" data-p="19.99">$19.99</span></b></span></a></div>
  <div style="height:56px"></div>
  <div class="feature">
   <div class="t"><div class="eyebrow">Best value</div><h3>All 4 Christmas games in one bundle</h3>
    <ul><li>50 picture bingo cards + calling cards</li><li>Left-right gift exchange stories</li><li>Picture &amp; riddle scavenger hunt</li><li>80-activity kids pack</li></ul>
-   <a class="btn btn-gold" href="https://www.etsy.com/listing/4624838355">Get the bundle on Etsy · $9.99</a></div>
+   <a class="btn btn-gold" href="https://www.etsy.com/listing/4624838355">Get the bundle on Etsy · <span class="pr" data-p="9.99">$9.99</span></a></div>
   <div class="img" style="background-image:url(pins/bingo_b.jpg);background-position:center 55%"></div>
+ </div>
+</div></section>
+
+<section id="valentine" data-season="val" style="background:#fbf1f1"><div class="wrap">
+ <div class="head"><div class="eyebrow">Valentine's Day 2027</div><h2>Valentine Games for Kids</h2><p>Ready-to-print fun for class parties and family Valentine's Day, with a short guide for the adult in charge.</p></div>
+ <div class="games two">
+  <div class="game"><a href="https://www.etsy.com/listing/4625637170"><img src="img/vhunt.jpg" alt="Valentine scavenger hunt picture and riddle clue cards" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4625637170">Valentine Scavenger Hunt</a></h4><p>36 clue cards: picture cards for ages 3–5, rhyming riddles for ages 6–10, plus prize coupons.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4625637170">Buy <b><span class="pr" data-p="4.49">$4.49</span></b></a></div></div></div>
+  <div class="game"><a href="https://www.etsy.com/listing/4625373820"><img src="img/vleft.jpg" alt="Valentine left right game printable cover and story page" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4625373820">Pass the Valentine! Left Right Game</a></h4><p>12 read-aloud stories and 2 bonus games—pass the prize on every LEFT and RIGHT.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4625373820">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></a></div></div></div>
+ </div>
+</div></section>
+
+<section id="party"><div class="wrap cog">
+ <img src="img/detective.jpg" alt="Kids playing the Detective Birthday Game, A Whistle in the Wrong Wing" loading="lazy">
+ <div>
+  <div class="eyebrow">Adventure Party Kits</div>
+  <h2>A Birthday Party Kids Solve Together</h2>
+  <p>Turn an at-home birthday into a real adventure. Kids work in teams through puzzle stations to crack the case, while a short host guide keeps everything easy for the grown-up.</p>
+  <ul><li>For ages 8–11, with 4–12 players</li><li>7 detective puzzle stations with hint cards and an answer key</li><li>Party extras included, in US Letter and A4</li></ul>
+  <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4625823838"><span class="n">Kit 1</span><span class="t">A Whistle in the Wrong Wing <small style="display:block;font-family:inherit;font-size:13px;color:var(--muted);font-weight:500">Detective mystery</small></span><span class="buy">Buy <b><span class="pr" data-p="9.99">$9.99</span></b></span></a></li></ul></div>
+  <p style="font-size:14.5px;margin-top:14px">More adventure kits are on the way—<a href="#newsletter" style="text-decoration:underline">join our list</a> to hear first.</p>
  </div>
 </div></section>
 
@@ -273,14 +302,14 @@ footer .fl a:hover{color:var(--gold2)}
   <h2>Gentle Cognitive Activities for Seniors &amp; Their Care Partners</h2>
   <p>A large-print series for seniors living with dementia and the people who care for them. Each page offers one calm activity with a familiar picture, so you can look, talk and share a moment together.</p>
   <ul><li>One activity per page, in large print</li><li>Familiar everyday pictures to look at and talk about</li><li>A companion page with simple tips for sharing the book</li></ul>
-  <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4624298390"><span class="n">Vol. 1</span><span class="t">In the Kitchen</span><span class="buy">Buy <b>$5.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624292185"><span class="n">Vol. 2</span><span class="t">In the Garden</span><span class="buy">Buy <b>$5.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624298722"><span class="n">Vol. 3</span><span class="t">Out and About</span><span class="buy">Buy <b>$5.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624292429"><span class="n">Vol. 4</span><span class="t">Music We Love</span><span class="buy">Buy <b>$5.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624292577"><span class="n">Vol. 5</span><span class="t">Making Things</span><span class="buy">Buy <b>$5.99</b></span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624315361"><span><b>All 5 books</b><small>All five volumes · save $9.96</small></span><span class="buy gold">Buy all <b>$19.99</b></span></a></div>
+  <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4624298390"><span class="n">Vol. 1</span><span class="t">In the Kitchen</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624292185"><span class="n">Vol. 2</span><span class="t">In the Garden</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624298722"><span class="n">Vol. 3</span><span class="t">Out and About</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624292429"><span class="n">Vol. 4</span><span class="t">Music We Love</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624292577"><span class="n">Vol. 5</span><span class="t">Making Things</span><span class="buy">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624315361"><span><b>All 5 books</b><small>All five volumes · save <span class="sv" data-sum="29.95">$9.96</span></small></span><span class="buy gold">Buy all <b><span class="pr" data-p="19.99">$19.99</span></b></span></a></div>
  </div>
  <div class="talk">
   <div>
    <div class="eyebrow">Talk Together Cards</div>
    <h2>Conversation Cards for Seniors</h2>
    <p>Printable large-print cards with gentle questions that invite stories and memories. Five themed decks of 72 cards each, 360 prompts in all, in US Letter and A4.</p>
-   <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4624771899"><span class="n">Deck 1</span><span class="t">Everyday Memories</span><span class="buy">Buy <b>$3.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624777956"><span class="n">Deck 2</span><span class="t">Childhood &amp; Home</span><span class="buy">Buy <b>$3.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624772941"><span class="n">Deck 3</span><span class="t">Work &amp; Hobbies</span><span class="buy">Buy <b>$3.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624773227"><span class="n">Deck 4</span><span class="t">Holidays &amp; Traditions</span><span class="buy">Buy <b>$3.99</b></span></a></li><li><a href="https://www.etsy.com/listing/4624779284"><span class="n">Deck 5</span><span class="t">Music &amp; Movies</span><span class="buy">Buy <b>$3.99</b></span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624832148"><span><b>All 5 decks bundle</b><small>360 prompts · save $7.00</small></span><span class="buy gold">Buy all <b>$12.95</b></span></a></div>
+   <div class="vlist"><ul><li><a href="https://www.etsy.com/listing/4624771899"><span class="n">Deck 1</span><span class="t">Everyday Memories</span><span class="buy">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624777956"><span class="n">Deck 2</span><span class="t">Childhood &amp; Home</span><span class="buy">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624772941"><span class="n">Deck 3</span><span class="t">Work &amp; Hobbies</span><span class="buy">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624773227"><span class="n">Deck 4</span><span class="t">Holidays &amp; Traditions</span><span class="buy">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></span></a></li><li><a href="https://www.etsy.com/listing/4624779284"><span class="n">Deck 5</span><span class="t">Music &amp; Movies</span><span class="buy">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></span></a></li></ul><a class="vbundle" href="https://www.etsy.com/listing/4624832148"><span><b>All 5 decks bundle</b><small>360 prompts · save <span class="sv" data-sum="19.95">$7.00</span></small></span><span class="buy gold">Buy all <b><span class="pr" data-p="12.95">$12.95</span></b></span></a></div>
   </div>
   <img src="img/seniors.jpg" alt="Printed large-print conversation cards from the Everyday Memories deck" loading="lazy">
  </div>
@@ -294,13 +323,13 @@ footer .fl a:hover{color:var(--gold2)}
 
 <section id="newsletter" class="signup">
  <div class="eyebrow">Free gift · The BrainVault letter</div>
- <h2>Get 2 free Christmas word searches</h2>
- <p>Join our list and download two large-print Christmas word search puzzles with an answer key, ready to print. We'll also let you know about new games and books, a few times a year. No spam, and you can unsubscribe anytime.</p>
+ <h2 id="nl_h">Get 2 free Christmas word searches</h2>
+ <p>Join our list and download two large-print <span id="nl_kind">Christmas </span>word search puzzles with an answer key, ready to print. We'll also let you know about new games and books, a few times a year. No spam, and you can unsubscribe anytime.</p>
  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfU471yL5uMKTKbhpm1poxop1LxvYfZtqKtSffqiqEBgoar9A/formResponse" method="POST" target="nl_frame" onsubmit="setTimeout(()=>{this.style.display='none';document.getElementById('nl_ok').style.display='block'},400)">
   <input type="email" name="entry.1705058869" required placeholder="Your email address" aria-label="Your email address" autocomplete="email">
   <button class="btn btn-gold" type="submit">Send me the puzzles</button>
  </form>
- <div id="nl_ok" class="ok" role="status">Thank you! You're on the list. Here are your puzzles:<br><a class="btn btn-gold" style="margin-top:16px" href="free/BrainVault_Free_Christmas_Word_Search.pdf" download>Download the free PDF</a></div>
+ <div id="nl_ok" class="ok" role="status">Thank you! You're on the list. Here are your puzzles:<br><a class="btn btn-gold" style="margin-top:16px" id="nl_dl" href="free/BrainVault_Free_Christmas_Word_Search.pdf" download>Download the free PDF</a></div>
  <iframe name="nl_frame" title="Signup" style="display:none"></iframe>
  <small>We keep your email only to send our updates. See our <a href="privacy.html">privacy policy</a>.</small>
 </section>
@@ -321,5 +350,34 @@ footer .fl a:hover{color:var(--gold2)}
  <div class="fl"><a href="https://www.etsy.com/shop/BrainVaultBooks">Etsy Shop</a><a href="#collections">Collections</a><a href="https://www.pinterest.com/brainvaultbooks/">Pinterest</a><a href="#newsletter">Free puzzles</a><a href="mailto:brainvaultbooks@gmail.com">Contact</a><a href="privacy.html">Privacy Policy</a></div>
  <div>© 2026 BrainVault Publications. All rights reserved.</div>
 </footer>
+<script>
+(function(){
+ var now=new Date();
+ // Etsy sale: 25% off everything. Shown only until the end time below, never after.
+ var SALE={pct:25,end:new Date('2026-12-01T04:59:00Z')};
+ var on=now<SALE.end;
+ function f(x){return '$'+x.toFixed(2)}
+ function sp(p){return Math.round(p*(100-SALE.pct))/100}
+ if(on){
+  document.getElementById('salebar').hidden=false;
+  document.querySelectorAll('.pr').forEach(function(e){var p=parseFloat(e.dataset.p);e.innerHTML='<s>'+f(p)+'</s>'+f(sp(p))});
+  document.querySelectorAll('.sv').forEach(function(e){var box=e.closest('.vlist');var b=box.querySelector('.vbundle .pr');var sum=0;box.querySelectorAll('li .pr').forEach(function(x){sum+=sp(parseFloat(x.dataset.p))});e.textContent=f(Math.round((sum-sp(parseFloat(b.dataset.p)))*100)/100)});
+ }
+ // Seasons: Christmas items hide after Dec 25; Valentine shows until Feb 14 and leads after Christmas.
+ var y=now.getFullYear(),m=now.getMonth()+1,d=now.getDate();
+ var xmas=(m===11)||(m===12&&d<=25);
+ var val=(m===12)||(m===1)||(m===2&&d<=14)||(m===11);
+ document.querySelectorAll('[data-season="xmas"]').forEach(function(e){if(!xmas)e.style.display='none'});
+ document.querySelectorAll('[data-season="post"]').forEach(function(e){if(xmas)e.style.display='none'});
+ document.querySelectorAll('[data-season="val"],[data-val]').forEach(function(e){if(!val)e.style.display='none'});
+ if(!xmas){
+  var v=document.getElementById('valentine'),c=document.getElementById('collections');
+  if(v&&c)c.parentNode.insertBefore(v,c.nextSibling);
+  document.getElementById('nl_h').textContent='Get 2 free large-print word searches';
+  document.getElementById('nl_kind').textContent='';
+  document.getElementById('nl_dl').setAttribute('href','free/BrainVault_Free_Large_Print_Word_Search.pdf');
+ }
+})();
+</script>
 </body>
 </html>
