@@ -152,7 +152,9 @@ section{padding:96px 0}
 #salebar a{color:#fff;font-weight:800;text-decoration:underline;margin-left:6px}
 .pr s{opacity:.6;font-weight:600;margin-right:5px}
 .games.two{grid-template-columns:repeat(2,1fr);max-width:900px;margin:0 auto}
-.games.two .game img{aspect-ratio:4/3}
+.games.two .game img,.games.three .game img{aspect-ratio:4/3}
+.games.three{grid-template-columns:repeat(3,1fr);max-width:1150px;margin:0 auto}
+@media(max-width:900px){.games.three{grid-template-columns:1fr 1fr}}@media(max-width:600px){.games.three{grid-template-columns:1fr}}
 @media(max-width:600px){.games.two{grid-template-columns:1fr}}
 .finder{max-width:900px;margin:0 auto;background:#fff;border:1px solid #e6d9c6;border-radius:22px;padding:28px 28px 30px;box-shadow:0 10px 30px rgba(40,25,15,.06)}
 .fq{margin-bottom:22px}
@@ -218,7 +220,7 @@ section{padding:96px 0}
 .final p{color:#e9dfd1;font-size:18px;margin:0 0 30px}
 footer{background:#100d0b;color:#b9ab98;padding:56px 24px 40px;text-align:center;font-size:14px}
 footer img{height:64px;margin-bottom:20px}
-footer .fl{display:flex;justify-content:center;gap:26px;margin:0 0 18px;font-weight:700;color:#e9dfd1}
+footer .fl{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 26px;margin:0 0 18px;font-weight:700;color:#e9dfd1}
 footer .fl a:hover{color:var(--gold2)}
 .cog{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
 .cog img{width:100%;border-radius:22px;box-shadow:0 18px 44px rgba(40,25,15,.18)}
@@ -354,7 +356,8 @@ footer .fl a:hover{color:var(--gold2)}
 
 <section id="valentine" data-season="val" style="background:#fbf1f1"><div class="wrap">
  <div class="head"><div class="eyebrow">Valentine's Day 2027</div><h2>Valentine Games for Kids</h2><p>Ready-to-print fun for class parties and family Valentine's Day, with a short guide for the adult in charge.</p></div>
- <div class="games two">
+ <div class="games three">
+  <div class="game"><a href="https://www.etsy.com/listing/4625492344"><img src="img/vbingo.jpg" alt="Valentine picture bingo cards for kids" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4625492344">Valentine Picture Bingo</a></h4><p>Bright picture cards with big names for class parties. Sets of <a href="https://www.etsy.com/listing/4625492344" style="text-decoration:underline">30</a>, <a href="https://www.etsy.com/listing/4625492854" style="text-decoration:underline">50</a> or <a href="https://www.etsy.com/listing/4625485039" style="text-decoration:underline">100</a> cards.</p><div class="gbtns"><a class="gbtn" href="https://www.etsy.com/listing/4625492344">From <b><span class="pr" data-p="2.99">$2.99</span></b></a></div></div></div>
   <div class="game"><a href="https://www.etsy.com/listing/4625637170"><img src="img/vhunt.jpg" alt="Valentine scavenger hunt picture and riddle clue cards" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4625637170">Valentine Scavenger Hunt</a></h4><p>36 clue cards: picture cards for ages 3–5, rhyming riddles for ages 6–10, plus prize coupons.</p><div class="gbtns"><button type="button" class="gbtn alt peekbtn" data-peek="vhunt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.4 1.5 12c1.2 2.6 5 7 10.5 7s9.3-4.4 10.5-7C21.3 9.4 17.5 5 12 5zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>Look inside</button><a class="gbtn" href="https://www.etsy.com/listing/4625637170">Buy <b><span class="pr" data-p="4.49">$4.49</span></b></a></div></div></div>
   <div class="game"><a href="https://www.etsy.com/listing/4625373820"><img src="img/vleft.jpg" alt="Valentine left right game printable cover and story page" loading="lazy"></a><div><h4><a href="https://www.etsy.com/listing/4625373820">Pass the Valentine! Left Right Game</a></h4><p>12 read-aloud stories and 2 bonus games—pass the prize on every LEFT and RIGHT.</p><div class="gbtns"><button type="button" class="gbtn alt peekbtn" data-peek="vleft"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.4 1.5 12c1.2 2.6 5 7 10.5 7s9.3-4.4 10.5-7C21.3 9.4 17.5 5 12 5zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>Look inside</button><a class="gbtn" href="https://www.etsy.com/listing/4625373820">Buy <b><span class="pr" data-p="3.99">$3.99</span></b></a></div></div></div>
  </div>
@@ -366,8 +369,8 @@ footer .fl a:hover{color:var(--gold2)}
   <div class="eyebrow">Adventure Party Kits</div>
   <h2>A Birthday Party Kids Solve Together</h2>
   <p>Turn an at-home birthday into a real adventure. Kids work in teams through puzzle stations to crack the case, while a short host guide keeps everything easy for the grown-up.</p>
-  <ul><li>For ages 8–11, with 4–12 players</li><li>7 detective puzzle stations with hint cards and an answer key</li><li>Party extras included, in US Letter and A4</li></ul>
-  <div class="vlist"><ul><li><a class="rt" href="https://www.etsy.com/listing/4625823838"><span class="n">Kit 1</span><span class="t">A Whistle in the Wrong Wing <small style="display:block;font-family:inherit;font-size:13px;color:var(--muted);font-weight:500">Detective mystery</small></span></a><button type="button" class="peek" data-peek="detective" aria-label="Look inside"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.4 1.5 12c1.2 2.6 5 7 10.5 7s9.3-4.4 10.5-7C21.3 9.4 17.5 5 12 5zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><span>Look inside</span></button><a class="buy" href="https://www.etsy.com/listing/4625823838">Buy <b><span class="pr" data-p="9.99">$9.99</span></b></a></li></ul></div>
+  <ul><li>For ages 8–11, with 4–12 players</li><li>7 puzzle stations per kit, with hint cards and an answer key</li><li>Party extras included, in US Letter and A4</li></ul>
+  <div class="vlist"><ul><li><a class="rt" href="https://www.etsy.com/listing/4625823838"><span class="n">Kit 1</span><span class="t">A Whistle in the Wrong Wing <small style="display:block;font-family:inherit;font-size:13px;color:var(--muted);font-weight:500">Detective mystery</small></span></a><button type="button" class="peek" data-peek="detective" aria-label="Look inside"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.4 1.5 12c1.2 2.6 5 7 10.5 7s9.3-4.4 10.5-7C21.3 9.4 17.5 5 12 5zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><span>Look inside</span></button><a class="buy" href="https://www.etsy.com/listing/4625823838">Buy <b><span class="pr" data-p="9.99">$9.99</span></b></a></li><li><a class="rt" href="https://www.etsy.com/listing/4626682913"><span class="n">Kit 2</span><span class="t">The Great Birthday Gem Hunt <small style="display:block;font-family:inherit;font-size:13px;color:var(--muted);font-weight:500">Treasure hunt</small></span></a><a class="buy" href="https://www.etsy.com/listing/4626682913">Buy <b><span class="pr" data-p="5.99">$5.99</span></b></a></li><li><a class="rt" href="https://www.etsy.com/listing/4626694160"><span class="n">Bundle</span><span class="t">Birthday Adventure Trio <small style="display:block;font-family:inherit;font-size:13px;color:var(--muted);font-weight:500">All 3 kits · 21 challenges</small></span></a><a class="buy" href="https://www.etsy.com/listing/4626694160">Buy <b><span class="pr" data-p="14.99">$14.99</span></b></a></li></ul></div>
   <p style="font-size:14.5px;margin-top:14px">More adventure kits are on the way—<a href="#newsletter" style="text-decoration:underline">join our list</a> to hear first.</p>
  </div>
 </div></section>
