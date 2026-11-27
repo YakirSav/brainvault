@@ -1,0 +1,23 @@
+name: Deploy to Cloudflare Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check token
+        id: tok
+        run: echo "ok=${{ secrets.CLOUDFLARE_API_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+      - name: Prepare site folder
+        if: steps.tok.outputs.ok == 'true'
+        run: rsync -a --exclude .git --exclude .github ./ dist/
+      - name: Deploy
+        if: steps.tok.outputs.ok == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 6c6aad36ce471412ad857237fe0e02a9
+          command: pages deploy dist --project-name=brainvaultbooks --branch=main --commit-dirty=true
